@@ -4,7 +4,8 @@ from tools.show import PltFunc
 from tools.nfp import NFP
 from tools.data import getData
 from tools.packing import PackingUtil,NFPAssistant,PolyListProcessor,Poly
-from heuristic import TOPOS,BottomLeftFill
+from TOPOS import TOPOS
+from bottom_left_fill import BottomLeftFill
 import json
 from shapely.geometry import Polygon,mapping
 from shapely import affinity

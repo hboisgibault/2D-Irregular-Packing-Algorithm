@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
 
+# 
+# Utility library to plot a polygon
+#
 class PltFunc(object):
 
     def addPolygon(poly):
