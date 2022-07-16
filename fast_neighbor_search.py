@@ -5,7 +5,8 @@
 from tools.geofunc import GeoFunc
 from tools.data import getData
 from tools.show import PltFunc
-from tools.packing import PolyListProcessor,NFPAssistant,BottomLeftFill
+from tools.packing import PolyListProcessor,NFPAssistant
+from bottom_left_fill import BottomLeftFill
 import pandas as pd
 import json
 from shapely.geometry import Polygon,Point,mapping,LineString
