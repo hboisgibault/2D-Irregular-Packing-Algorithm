@@ -192,7 +192,7 @@ class GA(object):
 if __name__=='__main__':
     starttime = datetime.datetime.now()
 
-    polys = getData(6)
+    polys = getData(0)
     all_rotation = [0] # 禁止旋转
     poly_list = PolyListProcessor.getPolyObjectList(polys, all_rotation)
 

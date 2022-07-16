@@ -457,6 +457,6 @@ class ILSQN():
         pass
 
 if __name__ == "__main__":
-    index = 6
+    index = 0
     polys = getData(index)
     FNS(polys)

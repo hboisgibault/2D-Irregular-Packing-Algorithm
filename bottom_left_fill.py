@@ -151,15 +151,16 @@ class BottomLeftFill(object):
 
 if __name__=='__main__':
     # index from 0-15
-    index=6
+    index=0
     polys=getData(index)
-    nfp_ass=packing.NFPAssistant(polys,store_nfp=True,get_all_nfp=True,load_history=False)
+    print(polys)
+    nfp_ass = packing.NFPAssistant(polys, store_nfp=False, get_all_nfp=True, load_history=False)
     # nfp_ass=packing.NFPAssistant(polys,store_nfp=False,get_all_nfp=True,load_history=True)
     # nfp_ass=packing.NFPAssistant(polys,store_nfp=False,get_all_nfp=False,load_history=False)
 
     starttime = datetime.datetime.now()
     # bfl=BottomLeftFill(2000,polys,vertical=False)
-    bfl=BottomLeftFill(760,polys,vertical=False,NFPAssistant=nfp_ass)
+    bfl=BottomLeftFill(1000,polys,NFPAssistant=nfp_ass)
     
     endtime = datetime.datetime.now()
     print ("total time: ",endtime - starttime)
